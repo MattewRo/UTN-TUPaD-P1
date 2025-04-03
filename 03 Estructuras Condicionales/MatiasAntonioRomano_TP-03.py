@@ -150,7 +150,7 @@ else:
 del año es y qué día es. El programa deberá utilizar esa información para imprimir por pantalla si el usuario se encuentra en otoño, invierno, primavera o verano."""
 
 #Se declaran primeras variables que seran introducidas por el usuario y se realiza el input
-emisferio = str(input("Dime de que hemisferio eres (N/S):  "))
+hemisferio = str(input("Dime de que hemisferio eres (N/S):  "))
 mes = int(input("Dime que mes es: "))
 dia = int(input("Dime que dia es: "))
 
@@ -162,8 +162,8 @@ mes10_11 = bool(mes == 10 or mes == 11)
 
 
 if (dia <= 31 and dia >= 1) and (mes <= 12 and mes >= 1): #if para que el usuario solo pueda escribir dias del 1 al 31 y meses del 1 al 12
-    if emisferio == "N" or emisferio == "S": #Lo mismo pero para que solo pueda escoger entre N y S
-        if emisferio == "N": #if general para cuando sea emisfero N
+    if hemisferio == "N" or hemisferio == "S": #Lo mismo pero para que solo pueda escoger entre N y S
+        if hemisferio == "N": #if general para cuando sea emisfero N
             if (mes == 12 and dia >= 21) or mes1_2 == True or (mes == 3 and dia <= 20):
                 print("Usted se encuentra en Invierno.")
             elif (mes == 3 and dia >= 21) or mes4_5 == True or (mes == 6 and dia <=20):
@@ -182,7 +182,7 @@ if (dia <= 31 and dia >= 1) and (mes <= 12 and mes >= 1): #if para que el usuari
             elif (mes == 9 and dia >= 21) or mes10_11 == True or (mes == 12 and dia <=20):
                 print("Usted se encuentra en Primavera.")
     else: #ELse para cuando no escribe bien el emisferio
-        print("No haz escrito el emisferio correcto (Recuerda escribirlo en mayúscula).")
+        print("No haz escrito el hemisferio correcto (Recuerda escribirlo en mayúscula).")
 else: #Else para cuando coloca una fecha fuera de lo permitido
     print("Haz colocado una fecha no existente.")
 
