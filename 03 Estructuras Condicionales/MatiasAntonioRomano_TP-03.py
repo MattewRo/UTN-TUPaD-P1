@@ -163,7 +163,7 @@ mes10_11 = bool(mes == 10 or mes == 11)
 
 if (dia <= 31 and dia >= 1) and (mes <= 12 and mes >= 1): #if para que el usuario solo pueda escribir dias del 1 al 31 y meses del 1 al 12
     if hemisferio == "N" or hemisferio == "S": #Lo mismo pero para que solo pueda escoger entre N y S
-        if hemisferio == "N": #if general para cuando sea emisfero N
+        if hemisferio == "N": #if general para cuando sea hemisfero N
             if (mes == 12 and dia >= 21) or mes1_2 == True or (mes == 3 and dia <= 20):
                 print("Usted se encuentra en Invierno.")
             elif (mes == 3 and dia >= 21) or mes4_5 == True or (mes == 6 and dia <=20):
