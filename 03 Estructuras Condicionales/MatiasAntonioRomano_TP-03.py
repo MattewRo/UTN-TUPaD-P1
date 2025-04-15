@@ -172,7 +172,7 @@ if (dia <= 31 and dia >= 1) and (mes <= 12 and mes >= 1): #if para que el usuari
                 print("Usted se encuentra en Verano.")
             elif (mes == 9 and dia >= 21) or mes10_11 == True or (mes == 12 and dia <=20):
                 print("Usted se encuentra en Otoño.")
-        elif emisferio == "S":#if general para cuando sea emisfero S
+        elif hemisferio == "S":#if general para cuando sea emisfero S
             if (mes == 12 and dia >= 21) or mes1_2 == True or (mes == 3 and dia <= 20):
                 print("Usted se encuentra en Verano.")
             elif (mes == 3 and dia >= 21) or mes4_5 == True or (mes == 6 and dia <=20):
