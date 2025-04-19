@@ -89,6 +89,20 @@ print(f"La cantidad de numeros pares es {num_par}, los numeros impares fueron {n
 
 """9) Elabora un programa que permita al usuario ingresar 100 números enteros y luego calcule la media de esos valores. (Nota: puedes probar el programa con una cantidad menor, pero debe
 poder procesar 100 números cambiando solo un valor)."""
-
+suma = 0
 for i in range (0, 100):
-    
+    n = int(input("Ingrese un numero a sumar y sacar la media:"))
+    suma += n
+    i+=1
+media = suma/i
+print(f"La suma total de todos los numeros es {suma} y su media es {media}")
+
+"""10) Escribe un programa que invierta el orden de los dígitos de un número ingresado por el usuario. Ejemplo: si el usuario ingresa 547, el programa debe mostrar 745."""
+#Solo funciona para numeros positivos
+numm = int(input("Ingresa el numero:"))
+numm_rev = 0
+while numm != 0:
+    digito = numm % 10
+    numm_rev = numm_rev * 10 + digito
+    numm = numm // 10
+print(f"El numero invertido es {numm_rev}") 
