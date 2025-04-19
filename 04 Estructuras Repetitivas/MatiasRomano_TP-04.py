@@ -21,7 +21,7 @@ dados por el usuario, excluyendo esos dos valores."""
 num1 = int(input("Ingresa el primer numero: "))
 num2 = int(input("Ingresa el segundo numero: "))
 num3 = 0
-for i in range (num1, num2+1):
+for i in range (num1+1, num2):
     num3+=i
 print(f"La suma de todos los numero enteros comprendidos entre los numeros es {num3}")
 
@@ -50,3 +50,42 @@ print(f"El numero aleatorio era {num_ale} y lo adivinaste en {intent} intentos."
 
 """6) Desarrolla un programa que imprima en pantalla todos los números pares comprendidos entre 0 y 100, en orden decreciente."""
 
+for i in range (100, -1, -2):
+    print(f"{i}")
+
+"""7) Crea un programa que calcule la suma de todos los números comprendidos entre 0 y un número entero positivo indicado por el usuario."""
+
+n_1 = int(input("Ingrese el numero entero: "))
+n_f = 0
+for i in range (0, n_1+1):
+    n_f+=i
+print(f"La suma de todos los numero enteros comprendidos entre 0 y tu numero es {n_f}")
+
+"""8) Escribe un programa que permita al usuario ingresar 100 números enteros. Luego, el programa debe indicar cuántos de estos números son pares, cuántos son impares, cuántos son
+negativos y cuántos son positivos. (Nota: para probar el programa puedes usar una cantidad menor, pero debe estar preparado para procesar 100 números con un solo cambio)."""
+num_imp = 0
+num_par=0
+num_pos=0
+num_neg=0
+
+n__1 = 0
+
+for i in range (0, 100):
+    n__1 = int(input("Ingrese el numero: "))
+    if n__1 % 2 == 0 and n__1 > 0:
+        num_par += 1
+        num_pos += 1
+    elif n__1 % 2 == 0 and n__1 < 0:
+        num_par += 1
+        num_neg += 1
+    elif n__1 % 2 != 0 and n__1 > 0:
+        num_imp += 1
+        num_pos += 1
+    elif n__1% 2 != 0 and n__1 < 0:
+        num_imp += 1
+        num_neg += 1
+
+print(f"La cantidad de numeros pares es {num_par}, los numeros impares fueron {num_imp}, los numeros positivos fueron {num_pos} y los numeros negativos fueron {num_neg}")
+
+"""9) Elabora un programa que permita al usuario ingresar 100 números enteros y luego calcule la media de esos valores. (Nota: puedes probar el programa con una cantidad menor, pero debe
+poder procesar 100 números cambiando solo un valor)."""
