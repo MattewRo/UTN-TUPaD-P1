@@ -1,9 +1,4 @@
-def contar_digito(numero, digito):
-    if numero == 0:
-        return 0
-    else:
-        if numero % 10 == digito:
-            return 1 + contar_digito(numero // 10, digito)
-        else:
-            return contar_digito(numero // 10, digito)
-print(contar_digito(11115, 1))
+original = {"Argentina" : "Buenos Aires", "Chile" : "Santiago", "Brasil" : "Brasilia"}
+invertida = {value : key for key, value in original.items()}
+
+print(f"La lista original es {original} y la invertida es {invertida}")
